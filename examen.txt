@@ -1,0 +1,36 @@
+1.Diferencia entre interfaz y clase abstracta.
+Una clase abstracta además de poder ser heredada solo una vez, contiene la declaración de los métodos con implementación.
+Una interfaz permite imitar la herencia múltiple, además de que solo contiene las definiciones de los métodos a implementar.
+
+2.Diferencia entre LinkedList y ArrayList.
+ArrayList es eficiente para acceder o almacenar datos de forma consecutiva, por otro lado, LinkedList es eficiente para el tratamiento de los datos, es decir, para insertar o eliminar haciendo que el acceso a los datos sea más lento que en un ArrayList.
+
+3.Cómo funciona el recolector de basura.
+Inicia identificando que espacios de memoria están siendo ocupados y cuáles no para así reconocer los objetos a los que ya no se hace referencia, posteriormente procede a eliminarlos y así poder reclamar la memoria.
+
+4.Escribe la función de POW sin usar multiplicación/ división ni las funciones de las mismas.
+	public class Main {
+		public static void main(String[] args) throws Exception {
+			System.out.println(pow(3,3));
+		}
+		
+		private static int pow(int base, int exponent){
+			int result = base;
+			
+			for(int x = 1 ; x < exponent ; x++){
+				result = multiplicacion(result,base);
+			}
+			
+			return result;
+		}
+		
+		private static int multiplicacion(int multiplicando, int multiplicador){
+			int producto = 0;
+			for(int x = 0 ; x < multiplicador ; x++){
+				producto = producto + multiplicando;
+			}
+			return producto;
+		}
+	}
+	
+5. usaria una tecnologia de paralelismo para el consumo de los enpoints que estan de bajo despues de la peticion del cliente (forkjoin) para mandar muchos hilos simultaneamente para consumir muchos endpoints al mismo tiempo y agrupa todas las respuestas en una o usaria redis para meter los endpoints en cache

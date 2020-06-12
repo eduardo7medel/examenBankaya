@@ -1,0 +1,14 @@
+para ejecutarlo deberan cambiar los datos de la BD en application-mysql
+
+deberan crear la BD con el SQL adjunto
+
+run.
+
+url http://localhost:8080/ws/countries.wsdl
+yo probe con soap-ui
+
+hice un metodo por que entendi mal el examen xD pero explicare como hacer los metodos separados:
+	primero crearia los objetos request de los metodos como los que estan hechos
+	despues crearia en el archivo countries los request de los enpoints (como los que ya estan)
+	posteriormente haria el enpoint en la clase pokemonEndpoint con sus respetivos nombres, request y responses (la mayaria de los reponses se puedes reutilizar)
+	y por ultimo haria el mapeo de dichos respondses.
